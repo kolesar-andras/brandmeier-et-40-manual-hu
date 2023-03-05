@@ -1,6 +1,6 @@
 pdf:
 	rm manual.pdf
-	latexmk -pdf manual.tex
+	latexmk -shell-escape -pdf manual.tex
 
 open: pdf
 	open manual.pdf &
